@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>	Thymeleaf Spring Boot Demo </title>
+	</head>
+	<body>
+		<p th:text="'Hello, ' + ${name} + '!'" />
+		<ul th:each="emp : ${emps}">
+		<li th:text="${emp.employeeName}"></li>
+		</ul>
+		<h4>Welcome to Thymeleaf Demo In Spring Boot</h4>
+	</body>
+</html>
